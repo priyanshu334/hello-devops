@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: hello-devops-app
+
+    ports:
+      - "3000:3000"
+
+    restart: unless-stopped
